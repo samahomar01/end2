@@ -42,7 +42,6 @@ if ($result->num_rows == 0) {
 $user = $result->fetch_assoc();
 
 if (password_verify($password, $user['password'])) {
-    // حذف الحقل password من الاستجابة لأسباب أمنية
     unset($user['password']);
     echo json_encode(['success' => true, 'message' => 'Login successful', 'user' => $user]);
 } else {
