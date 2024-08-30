@@ -1,18 +1,34 @@
 <?php
-header('Content-Type: application/json');
-header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: POST, OPTIONS');
-header('Access-Control-Allow-Headers: Content-Type');
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type, Authorization");
+header("Content-Type: application/json; charset=UTF-8");
+
+// التعامل مع طلبات OPTIONS
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(204); // No content
+    exit();
+}
 
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "lab_techcare";
+$dbname = "samahh";
 
+// إنشاء الاتصال
 $conn = new mysqli($servername, $username, $password, $dbname);
 
+$response = [];
+
+// التحقق من الاتصال
 if ($conn->connect_error) {
-    echo json_encode(['success' => false, 'message' => 'Connection failed: ' . $conn->connect_error]);
+    $response['success'] = false;
+    $response['message'] = 'Database connection failed: ' . $conn->connect_error;
+    echo json_encode($response);
     exit();
 }
 
@@ -24,6 +40,7 @@ $status = $data['status'] ?? '';
 $brand = $data['brand'] ?? '';
 $manufacturLot = $data['manufacturer'] ?? '';
 $type = $data['type'] ?? '';
+$language = $data['language'] ?? ''; // استلام اللغة
 $lo_id = $data['labId'] ?? 0;
 
 $stmt = $conn->prepare("INSERT INTO equipment (name, brand, serial_no, status, manufacturLot, lo_id, type) VALUES (?, ?, ?, ?, ?, ?, ?)");
@@ -47,10 +64,12 @@ if ($stmt->execute()) {
             $stmt = $conn->prepare("INSERT INTO fax (eq_id, type, subtype, speed, typeofpaper, refillcode) VALUES (?, ?, ?, ?, ?, ?)");
             $stmt->bind_param("isssss", $deviceId, $data['specificFields'][0], $data['specificFields'][1], $data['specificFields'][2], $data['specificFields'][3], $data['specificFields'][4]);
             break;
-        case 'Keyboard':
-            $stmt = $conn->prepare("INSERT INTO keyboard (eq_id, type, subtype, layout, aren, connectiontype) VALUES (?, ?, ?, ?, ?, ?)");
-            $stmt->bind_param("isssss", $deviceId, $data['specificFields'][0], $data['specificFields'][1], $data['specificFields'][2], $data['specificFields'][3], $data['specificFields'][4]);
-            break;
+            case 'Keyboard':
+                // تعديل الاستعلام لإرسال $language إلى الحقل `aren`
+                $stmt = $conn->prepare("INSERT INTO keyboard (eq_id, type, subtype, layout, aren, connectiontype) VALUES (?, ?, ?, ?, ?, ?)");
+                $stmt->bind_param("isssss", $deviceId, $data['specificFields'][0], $data['specificFields'][1], $data['specificFields'][2], $language, $data['specificFields'][4]);
+                break;
+            
         case 'Monitor':
             $stmt = $conn->prepare("INSERT INTO monitor (eq_id, type, subtype, size, maxresolution, coonnectiontype) VALUES (?, ?, ?, ?, ?, ?)");
             $stmt->bind_param("isssss", $deviceId, $data['specificFields'][0], $data['specificFields'][1], $data['specificFields'][2], $data['specificFields'][3], $data['specificFields'][4]);
@@ -84,12 +103,21 @@ if ($stmt->execute()) {
             $stmt->bind_param("isss", $deviceId, $data['specificFields'][0], $data['specificFields'][1], $data['specificFields'][2]);
             break;
         case 'Switch':
-            $stmt = $conn->prepare("INSERT INTO `switch` (eq_id, subtype, totalnumports, poeports, foconnections) VALUES (?, ?, ?, ?, ?)");
-            $stmt->bind_param("issss", $deviceId, $data['specificFields'][0], $data['specificFields'][1], $data['specificFields'][2], $data['specificFields'][3]);
+            $stmt = $conn->prepare("INSERT INTO `switch` (eq_id, subtype, totalports, speed) VALUES (?, ?, ?, ?)");
+            $stmt->bind_param("isss", $deviceId, $data['specificFields'][0], $data['specificFields'][1], $data['specificFields'][2]);
             break;
-        default:
-            echo json_encode(['success' => false, 'message' => 'Unknown device type']);
-            exit();
+        case 'UPS':
+            $stmt = $conn->prepare("INSERT INTO ups (eq_id, type, power, runat, duration) VALUES (?, ?, ?, ?, ?)");
+            $stmt->bind_param("sssss", $deviceId, $data['specificFields'][0], $data['specificFields'][1], $data['specificFields'][2], $data['specificFields'][3]);
+            break;
+        case 'Webcam':
+            $stmt = $conn->prepare("INSERT INTO webcam (eq_id, type, resolution, connectiontype) VALUES (?, ?, ?, ?)");
+            $stmt->bind_param("isss", $deviceId, $data['specificFields'][0], $data['specificFields'][1], $data['specificFields'][2]);
+            break;
+        case 'Other':
+            $stmt = $conn->prepare("INSERT INTO other (eq_id, type, description) VALUES (?, ?, ?)");
+            $stmt->bind_param("sss", $deviceId, $data['specificFields'][0], $data['specificFields'][1]);
+            break;
     }
 
     if ($stmt && $stmt->execute()) {

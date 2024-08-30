@@ -1,0 +1,1254 @@
+
+Error: Missing data
+
+Error: Missing data
+Array
+(
+    [lab_id] => 10
+    [device_name] => div3
+)
+
+
+Error: Missing data
+Array
+(
+    [lab_id] => 10
+    [device_name] => div5
+)
+
+
+Error: Missing data
+Array
+(
+    [lab_id] => 10
+    [device_name] => div6
+)
+
+
+Error: Missing data
+Array
+(
+    [lab_id] => 10
+    [device_name] => div7
+)
+
+
+Error: Missing data
+
+Error: Missing data
+Array
+(
+    [lab_id] => 10
+    [device_name] => div8
+)
+
+
+Error: Missing data
+Array
+(
+    [lab_id] => 10
+    [device_name] => div9
+)
+
+
+Error: Missing data
+Array
+(
+    [lab_id] => 10
+    [device_name] => dii
+)
+
+
+Error: Missing data
+Array
+(
+    [lab_id] => 10
+    [device_name] => div20
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 10
+    [equipment_id] => 20
+)
+
+Array
+(
+    [device_id] => 10
+    [equipment_id] => 22
+)
+
+
+Error: Missing data
+Array
+(
+    [lab_id] => 10
+    [device_name] => div21
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 11
+    [equipment_id] => 30
+)
+
+Error: MySQL server has gone away
+
+Error: Missing data
+Array
+(
+    [device_id] => 11
+    [equipment_id] => 24
+)
+
+
+Error: Missing data
+Array
+(
+    [lab_id] => 10
+    [device_name] => div5
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 12
+    [equipment_id] => 26
+)
+
+
+Error: Missing data
+Array
+(
+    [lab_id] => 10
+    [device_name] => div66
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 13
+    [equipment_id] => 30
+)
+
+
+Error: Missing data
+Array
+(
+    [lab_id] => 10
+    [device_name] => div67
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 14
+    [equipment_id] => 32
+)
+
+
+Error: Missing data
+Array
+(
+    [lab_id] => 10
+    [device_name] => div121
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 15
+    [equipment_id] => 34
+)
+
+
+Error: Missing data
+Array
+(
+    [lab_id] => 10
+    [device_name] => dda
+)
+
+
+Error: Missing data
+Array
+(
+    [lab_id] => 10
+    [device_name] => ddw
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 17
+    [equipment_id] => 36
+)
+
+
+Error: Missing data
+Array
+(
+    [lab_id] => 10
+    [device_name] => div44
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 18
+    [equipment_id] => 20
+)
+
+
+Error: Missing data
+Array
+(
+    [lab_id] => 10
+    [device_name] => div44
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 19
+    [equipment_id] => 22
+)
+
+
+Error: Missing data
+Array
+(
+    [lab_id] => 10
+    [device_name] => div90
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 20
+    [equipment_ids] => Array
+        (
+            [0] => 20
+            [1] => 24
+        )
+
+)
+
+
+Error: Missing data
+Array
+(
+    [lab_id] => 10
+    [device_name] => div5
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 21
+    [equipment_ids] => Array
+        (
+            [0] => 36
+        )
+
+)
+
+
+Error: Missing data
+Array
+(
+    [lab_id] => 10
+    [device_name] => divvv
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 22
+    [equipment_ids] => Array
+        (
+            [0] => 26
+            [1] => 30
+        )
+
+)
+
+
+Error: Missing data
+Array
+(
+    [lab_id] => 10
+    [device_name] => ss
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 23
+    [equipment_ids] => Array
+        (
+            [0] => 32
+        )
+
+)
+
+
+Error: Missing data
+Array
+(
+    [lab_id] => 10
+    [device_name] => dd
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 24
+    [equipment_ids] => Array
+        (
+            [0] => 34
+        )
+
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 14
+    [equipment_ids] => Array
+        (
+        )
+
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 14
+    [equipment_ids] => Array
+        (
+        )
+
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 14
+    [equipment_ids] => Array
+        (
+            [0] => 38
+        )
+
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 14
+    [equipment_ids] => Array
+        (
+        )
+
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 14
+    [equipment_ids] => Array
+        (
+            [0] => 38
+        )
+
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 14
+    [equipment_ids] => Array
+        (
+        )
+
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 14
+    [equipment_ids] => Array
+        (
+        )
+
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 14
+    [equipment_ids] => Array
+        (
+        )
+
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 14
+    [equipment_ids] => Array
+        (
+            [0] => 38
+            [1] => 40
+        )
+
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 14
+    [equipment_ids] => Array
+        (
+            [0] => 38
+        )
+
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 14
+    [equipment_ids] => Array
+        (
+            [0] => 40
+        )
+
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 14
+    [equipment_ids] => Array
+        (
+            [0] => 38
+        )
+
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 14
+    [equipment_ids] => Array
+        (
+            [0] => 38
+        )
+
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 19
+    [equipment_ids] => Array
+        (
+            [0] => 42
+        )
+
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 19
+    [equipment_ids] => Array
+        (
+            [0] => 40
+        )
+
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 19
+    [equipment_ids] => Array
+        (
+            [0] => 38
+        )
+
+)
+
+
+Error: Missing data
+Array
+(
+    [lab_id] => 10
+    [device_name] => Device01
+)
+
+
+Error: Missing data
+Array
+(
+    [device_id] => 25
+    [equipment_ids] => Array
+        (
+            [0] => 44
+            [1] => 46
+            [2] => 48
+            [3] => 50
+        )
+
+)
+
+Array
+(
+    [device_id] => 8
+    [equipment_ids] => Array
+        (
+            [0] => 36
+        )
+
+)
+
+Array
+(
+    [lab_id] => 10
+    [device_name] => gggg
+)
+
+Array
+(
+    [device_id] => 18
+    [equipment_ids] => Array
+        (
+            [0] => 20
+        )
+
+)
+
+Array
+(
+    [lab_id] => 10
+    [device_name] => div
+)
+
+Array
+(
+    [device_id] => 19
+    [equipment_ids] => Array
+        (
+            [0] => 37
+        )
+
+)
+
+Array
+(
+    [device_id] => 10
+    [equipment_ids] => Array
+        (
+            [0] => 22
+        )
+
+)
+
+Array
+(
+    [lab_id] => 10
+    [device_name] => sssa
+)
+
+Array
+(
+    [lab_id] => 10
+    [device_name] => sssa
+)
+
+Array
+(
+    [lab_id] => 10
+    [device_name] => sssa
+)
+
+Array
+(
+    [lab_id] => 10
+    [device_name] => div333
+)
+
+Array
+(
+    [lab_id] => 10
+    [device_name] => div333
+)
+
+Array
+(
+    [lab_id] => 10
+    [device_name] => div333
+)
+
+Array
+(
+    [lab_id] => 10
+    [device_name] => aa
+)
+
+Array
+(
+    [lab_id] => 10
+    [device_name] => aa
+)
+
+Array
+(
+    [device_id] => 24
+    [equipment_ids] => Array
+        (
+            [0] => 38
+        )
+
+)
+
+Array
+(
+    [lab_id] => 10
+    [device_name] => lolololo
+)
+
+Array
+(
+    [device_id] => 25
+    [equipment_ids] => Array
+        (
+            [0] => 39
+            [1] => 40
+            [2] => 41
+        )
+
+)
+
+Array
+(
+    [device_id] => 25
+    [equipment_ids] => Array
+        (
+            [0] => 42
+            [1] => 43
+        )
+
+)
+
+Array
+(
+    [lab_id] => 10
+    [device_name] => divhaifa
+)
+
+Array
+(
+    [device_id] => 26
+    [equipment_ids] => Array
+        (
+            [0] => 44
+        )
+
+)
+
+Array
+(
+    [lab_id] => 10
+    [device_name] => lpj
+)
+
+Array
+(
+    [device_id] => 27
+    [equipment_ids] => Array
+        (
+            [0] => 45
+        )
+
+)
+
+Array
+(
+    [lab_id] => 10
+    [device_name] => bbbb
+)
+
+Array
+(
+    [device_id] => 28
+    [equipment_ids] => Array
+        (
+            [0] => 46
+            [1] => 47
+            [2] => 48
+        )
+
+)
+
+Array
+(
+    [lab_id] => 10
+    [device_name] => ghjkl
+)
+
+Array
+(
+    [lab_id] => 10
+    [device_name] => ghjkl
+)
+
+Array
+(
+    [device_id] => 30
+    [equipment_ids] => Array
+        (
+            [0] => 49
+        )
+
+)
+
+Array
+(
+    [lab_id] => 10
+    [device_name] => sk
+)
+
+Array
+(
+    [device_id] => 31
+    [equipment_ids] => Array
+        (
+            [0] => 50
+        )
+
+)
+
+Array
+(
+    [device_id] => 16
+    [equipment_ids] => Array
+        (
+            [0] => 61
+        )
+
+)
+
+Array
+(
+    [device_id] => 17
+    [equipment_ids] => Array
+        (
+            [0] => 62
+        )
+
+)
+
+Array
+(
+    [device_id] => 18
+    [equipment_ids] => Array
+        (
+            [0] => 63
+        )
+
+)
+
+Array
+(
+    [device_id] => 19
+    [equipment_ids] => Array
+        (
+            [0] => 64
+        )
+
+)
+
+Array
+(
+    [device_id] => 20
+    [equipment_ids] => Array
+        (
+            [0] => 65
+        )
+
+)
+
+Array
+(
+    [device_id] => 1
+    [equipment_ids] => Array
+        (
+            [0] => 114
+        )
+
+)
+
+Array
+(
+    [device_id] => 2
+    [equipment_ids] => Array
+        (
+            [0] => 115
+        )
+
+)
+
+Array
+(
+    [device_id] => 3
+    [equipment_ids] => Array
+        (
+            [0] => 116
+        )
+
+)
+
+Array
+(
+    [device_id] => 16
+    [equipment_ids] => Array
+        (
+            [0] => 91
+        )
+
+)
+
+Array
+(
+    [device_id] => 17
+    [equipment_ids] => Array
+        (
+            [0] => 92
+        )
+
+)
+
+Array
+(
+    [lab_id] => 11
+    [device_name] => Router
+)
+
+Array
+(
+    [device_id] => 21
+    [equipment_ids] => Array
+        (
+            [0] => 109
+        )
+
+)
+
+Array
+(
+    [lab_id] => 1
+    [device_name] => Router
+)
+
+Array
+(
+    [device_id] => 22
+    [equipment_ids] => Array
+        (
+            [0] => 109
+        )
+
+)
+
+Array
+(
+    [lab_id] => 2
+    [device_name] => Router
+)
+
+Array
+(
+    [device_id] => 23
+    [equipment_ids] => Array
+        (
+            [0] => 110
+        )
+
+)
+
+Array
+(
+    [lab_id] => 3
+    [device_name] => Router
+)
+
+Array
+(
+    [device_id] => 24
+    [equipment_ids] => Array
+        (
+            [0] => 111
+        )
+
+)
+
+Array
+(
+    [lab_id] => 4
+    [device_name] => Router
+)
+
+Array
+(
+    [device_id] => 25
+    [equipment_ids] => Array
+        (
+            [0] => 112
+        )
+
+)
+
+Array
+(
+    [lab_id] => 5
+    [device_name] => Router
+)
+
+Array
+(
+    [device_id] => 26
+    [equipment_ids] => Array
+        (
+            [0] => 113
+        )
+
+)
+
+Array
+(
+    [lab_id] => 6
+    [device_name] => Printer
+)
+
+Array
+(
+    [device_id] => 27
+    [equipment_ids] => Array
+        (
+            [0] => 61
+        )
+
+)
+
+Array
+(
+    [lab_id] => 6
+    [device_name] => Photocopy
+)
+
+Array
+(
+    [device_id] => 28
+    [equipment_ids] => Array
+        (
+            [0] => 91
+        )
+
+)
+
+Array
+(
+    [lab_id] => 6
+    [device_name] => projector
+)
+
+Array
+(
+    [device_id] => 29
+    [equipment_ids] => Array
+        (
+            [0] => 99
+        )
+
+)
+
+Array
+(
+    [lab_id] => 7
+    [device_name] => Printer
+)
+
+Array
+(
+    [device_id] => 30
+    [equipment_ids] => Array
+        (
+            [0] => 62
+        )
+
+)
+
+Array
+(
+    [lab_id] => 7
+    [device_name] => Photocopy
+)
+
+Array
+(
+    [device_id] => 31
+    [equipment_ids] => Array
+        (
+            [0] => 92
+        )
+
+)
+
+Array
+(
+    [lab_id] => 8
+    [device_name] => Printer
+)
+
+Array
+(
+    [device_id] => 32
+    [equipment_ids] => Array
+        (
+            [0] => 63
+        )
+
+)
+
+Array
+(
+    [lab_id] => 8
+    [device_name] => Projector
+)
+
+Array
+(
+    [device_id] => 33
+    [equipment_ids] => Array
+        (
+            [0] => 100
+        )
+
+)
+
+Array
+(
+    [device_id] => 33
+    [equipment_ids] => Array
+        (
+            [0] => 93
+        )
+
+)
+
+Array
+(
+    [device_id] => 33
+    [equipment_ids] => Array
+        (
+            [0] => 101
+        )
+
+)
+
+Array
+(
+    [lab_id] => 9
+    [device_name] => Printer
+)
+
+Array
+(
+    [device_id] => 34
+    [equipment_ids] => Array
+        (
+            [0] => 64
+        )
+
+)
+
+Array
+(
+    [lab_id] => 9
+    [device_name] => Projector
+)
+
+Array
+(
+    [device_id] => 35
+    [equipment_ids] => Array
+        (
+            [0] => 102
+        )
+
+)
+
+Array
+(
+    [lab_id] => 10
+    [device_name] => Printer
+)
+
+Array
+(
+    [device_id] => 36
+    [equipment_ids] => Array
+        (
+            [0] => 65
+        )
+
+)
+
+Array
+(
+    [lab_id] => 10
+    [device_name] => Projector
+)
+
+Array
+(
+    [device_id] => 37
+    [equipment_ids] => Array
+        (
+            [0] => 103
+        )
+
+)
+
+Array
+(
+    [lab_id] => 1
+    [device_name] => Switch
+)
+
+Array
+(
+    [device_id] => 38
+    [equipment_ids] => Array
+        (
+            [0] => 114
+        )
+
+)
+
+Array
+(
+    [lab_id] => 2
+    [device_name] => Switch
+)
+
+Array
+(
+    [device_id] => 39
+    [equipment_ids] => Array
+        (
+            [0] => 115
+        )
+
+)
+
+Array
+(
+    [lab_id] => 3
+    [device_name] => Switch
+)
+
+Array
+(
+    [device_id] => 40
+    [equipment_ids] => Array
+        (
+            [0] => 116
+        )
+
+)
+
+Array
+(
+    [lab_id] => 4
+    [device_name] => Switch
+)
+
+Array
+(
+    [device_id] => 41
+    [equipment_ids] => Array
+        (
+            [0] => 117
+        )
+
+)
+
+Array
+(
+    [lab_id] => 5
+    [device_name] => Switch
+)
+
+Array
+(
+    [device_id] => 42
+    [equipment_ids] => Array
+        (
+            [0] => 118
+        )
+
+)
+
+Array
+(
+    [lab_id] => 11
+    [device_name] => Router
+)
+
+Array
+(
+    [device_id] => 43
+    [equipment_ids] => Array
+        (
+            [0] => 109
+        )
+
+)
+

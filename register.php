@@ -1,19 +1,31 @@
 <?php
-header('Content-Type: application/json');
-header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: POST');
-header('Access-Control-Allow-Headers: Content-Type');
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type, Authorization");
+header("Content-Type: application/json; charset=UTF-8");
 
-// بقية الكود يبقى كما هو...
+// التعامل مع طلبات OPTIONS
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(204); // No content
+    exit();
+}
+
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "lab_techcare";
+$dbname = "samahh";
 
+// إنشاء الاتصال
 $conn = new mysqli($servername, $username, $password, $dbname);
 
+$response = [];
+
+// التحقق من الاتصال
 if ($conn->connect_error) {
-    die(json_encode(['success' => false, 'message' => 'Database connection failed: ' . $conn->connect_error]));
+    $response['success'] = false;
+    $response['message'] = 'Database connection failed: ' . $conn->connect_error;
+    echo json_encode($response);
+    exit();
 }
 
 $data = json_decode(file_get_contents('php://input'), true);

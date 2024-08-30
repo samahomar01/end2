@@ -1,20 +1,44 @@
 <?php
-// get_available_equipment.php
-header("Content-Type: application/json");
-require 'db_connection.php';
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type, Authorization");
+header("Content-Type: application/json; charset=UTF-8");
 
-$lab_id = $_GET['lab_id'];
+// التعامل مع طلبات OPTIONS
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(204); // No content
+    exit();
+}
 
-$sql = "SELECT * FROM equipment WHERE lab_id = ? AND is_available = TRUE";
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("i", $lab_id);
-$stmt->execute();
-$result = $stmt->get_result();
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "samahh";
 
-$equipment = array();
-while($row = $result->fetch_assoc()) {
-    $equipment[] = $row;
+// إنشاء الاتصال
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+$response = [];
+
+// التحقق من الاتصال
+if ($conn->connect_error) {
+    $response['success'] = false;
+    $response['message'] = 'Database connection failed: ' . $conn->connect_error;
+    echo json_encode($response);
+    exit();
+}
+
+$sql = "SELECT * FROM equipment WHERE is_available = 1 AND device_id IS NULL";
+$result = $conn->query($sql);
+
+$equipment = [];
+if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+        $equipment[] = $row;
+    }
 }
 
 echo json_encode($equipment);
+
+$conn->close();
 ?>
